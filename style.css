@@ -11,6 +11,9 @@ a{
     text-decoration: none;
     color:white;
 }
+a:hover{
+    text-decoration:underline;
+}
 
 body{
     min-height: 100vh;
@@ -63,24 +66,40 @@ section p{
 }
 
 /*----- SECTION IMAGE1 -----*/
-section.img{
+section.img, section.img2{
     
     background-image: url('https://raw.githubusercontent.com/OliveiraVasconcelos/Projeto-Cordel/main/images/background001.jpg');
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
     background-position: right center;
-    box-shadow: initial 10px 10px 10px rgba(0, 0, 0, 0.938);
+    box-shadow: inset 5px 5px 13px 0 rgba(20, 20, 20, 0.589);
 }
 
-section.img > p{
+section.img > p,
+section.img2 > p{
     color: white;
     background-color: #00000091;
     display: inline-block;
     padding: 5px;
-    text-shadow: 2px 2px 2px rgba(131, 39, 39, 0.774);
+    text-shadow: 2px 2px 2px rgba(14, 13, 13, 0.856);
+   
 }
+
 /*----- SECTION IMAGE2 -----*/
 section.img2{
     background-image: url('https://raw.githubusercontent.com/OliveiraVasconcelos/Projeto-Cordel/main/images/background002.jpg');
+    background-position: left center;
+}
+
+/*----- FOOTER -----*/
+footer p{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5vh;
+    
 }
